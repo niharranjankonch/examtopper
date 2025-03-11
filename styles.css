@@ -1,0 +1,954 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #1f2937;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #2563eb;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2563eb;
+  }
+  
+  .navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li a {
+    transition: color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    color: #1f2937;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links li a:hover {
+    transform: scale(1.1);
+    color: #2563eb;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background: #1e40af;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #1c3fa8;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-card h2 {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  /* Footer */
+  .footer {
+    background: white;
+    color: #1f2937;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  /* Select Exam Section */
+.select-exam {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.select-exam h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.exam-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.exam-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.exam-card:hover {
+  transform: translateY(-10px);
+}
+
+.exam-card h2 {
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.exam-card p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Subjects Section */
+.subjects {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.subjects h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.subject-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.subject-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-10px);
+}
+
+.subject-card h2 {
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.subject-card p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.subject-card .cta-button {
+  margin: 5px;
+}
+
+/* Subject Icon */
+.subject-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+/* Button Group for Chapter-wise and Paper-wise */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Chapter-wise Button */
+.chapter-button {
+  background: #4CAF50; /* Green */
+}
+
+.chapter-button:hover {
+  background: #45a049;
+}
+
+/* Paper-wise Button */
+.paper-button {
+  background: #2196F3; /* Blue */
+}
+
+.paper-button:hover {
+  background: #1e88e5;
+}
+
+/* Remove Underline on Hover */
+a:hover {
+  text-decoration: none;
+}
+
+/* Update CTA Button Hover Effect */
+.cta-button:hover {
+  background: #1c3fa8;
+  transform: scale(1.05);
+}
+
+/* Subject Icon */
+.subject-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+/* Button Group for Chapter-wise and Paper-wise */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Chapter-wise Button */
+.chapter-button {
+  background: #4CAF50; /* Green */
+}
+
+.chapter-button:hover {
+  background: #45a049;
+}
+
+/* Paper-wise Button */
+.paper-button {
+  background: #2196F3; /* Blue */
+}
+
+.paper-button:hover {
+  background: #1e88e5;
+}
+
+/* Remove Underline on Hover */
+a:hover {
+  text-decoration: none;
+}
+
+/* Update CTA Button Hover Effect */
+.cta-button:hover {
+  background: #1c3fa8;
+  transform: scale(1.05);
+}
+
+/* Feedback Section */
+.feedback {
+  padding: 60px 20px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.feedback h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2563eb;
+}
+
+.testimonials-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.testimonial-card {
+  flex: 0 0 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  color: #2563eb;
+}
+
+/* Animation for Scrolling Testimonials */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Paper-wise Section */
+.paper-wise {
+  padding: 40px 20px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.paper-wise h2 {
+  font-size: 1.8rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.paper-wise p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.paper-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.paper-button {
+  background: #e0e0e0;
+  color: #6b7280;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: not-allowed;
+  transition: background 0.3s ease;
+}
+
+.paper-button.locked {
+  position: relative;
+}
+
+.paper-button.locked::after {
+  content: "🔒";
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.premium-button {
+  background: #ff5722;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.premium-button:hover {
+  background: #e64a19;
+}
+
+/* Plans Section */
+.plans {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.plans h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.plans p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.plan-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.plan-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+}
+
+.plan-card h2 {
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.plan-card p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Paper-wise Section */
+.paper-wise {
+  padding: 40px 20px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.paper-wise h2 {
+  font-size: 1.8rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.paper-wise p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.paper-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.paper-button {
+  background: #e0e0e0;
+  color: #6b7280;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: not-allowed;
+  transition: background 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.paper-button.locked::after {
+  content: "🔒";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.paper-button.unlocked {
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+.paper-button.unlocked:hover {
+  background: #45a049;
+}
+
+
+.paper-button:hover {
+  background: #d0d0d0;
+  transform: translateY(-3px);
+}
+
+.premium-button {
+  background: #ff5722;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.premium-button:hover {
+  background: #e64a19;
+  transform: translateY(-3px);
+}
+
+/* Plans Section */
+.plans {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.plans h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.plans p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.plan-comparison {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.plan-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.plan-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+.plan-card .price {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.plan-card .price span {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.plan-card .discount {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 15px;
+}
+
+.plan-card .discount .strike {
+  text-decoration: line-through;
+  color: #ff5722;
+}
+
+.plan-card ul.features {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.plan-card ul.features li {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 12px 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.plan-card ul.features li i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.plan-card ul.features li i.fa-check {
+  color: #4CAF50; /* Green checkmark */
+}
+
+.plan-card ul.features li i.fa-times {
+  color: #ff5722; /* Red crossmark */
+}
+
+.plan-card.free {
+  border: 2px solid #2563eb;
+}
+
+.plan-card.standard {
+  border: 2px solid #ff9800; /* Orange for Standard */
+  background: #fff3e0; /* Light orange background */
+}
+
+.plan-card.premium {
+  border: 2px solid #ffd700; /* Gold for Premium */
+  background: #fff9c4; /* Light gold background */
+}
+
+.cta-button {
+  background: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #1c3fa8;
+  transform: translateY(-3px);
+}
+
+.premium-button {
+  background: #ff5722;
+}
+
+.premium-button:hover {
+  background: #e64a19;
+}
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #2563eb;
+  color: white;
+}
+
+.header .exam-info h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header .exam-info p {
+  font-size: 1rem;
+  margin: 5px 0 0;
+}
+
+.header .timer {
+  font-size: 1.2rem;
+}
+
+.header .timer i {
+  margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  padding: 20px;
+}
+
+/* Question Section */
+.question-section {
+  flex: 3;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.question-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.question-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.solution-button {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.solution-button:hover {
+  background: #1c3fa8;
+}
+
+.solution-dropdown {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f4f8;
+  border-radius: 5px;
+}
+
+.solution-dropdown p {
+  margin: 5px 0;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.question-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.question-numbers span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.question-numbers .correct {
+  background: #4CAF50;
+  color: white;
+}
+
+.question-numbers .incorrect {
+  background: #ff5722;
+  color: white;
+}
+
+.question-numbers .visited {
+  background: #9c27b0;
+  color: white;
+}
+
+.question-numbers .not-visited {
+  background: #e0e0e0;
+  color: #1f2937;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+  background: #1c3fa8;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background: #2563eb;
+}
+
+.footer button {
+  background: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.footer button:hover {
+  background: #e64a19;
+}
+
+/* Chapter Section */
+.chapters {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.chapters h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.chapters p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.chapter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.chapter-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chapter-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.chapter-card h2 {
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.chapter-card p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #1c3fa8;
+}

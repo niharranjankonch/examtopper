@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Attempt - ExamTopper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="exam-info">
+      <h1>JEE Main 2023 - Paper 1</h1>
+      <p>Physics - Kinematics</p>
+    </div>
+    <div class="timer">
+      <i class="fas fa-clock"></i>
+      <span>Time Left: </span>
+      <span id="time">01:30:00</span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Question Section -->
+    <section class="question-section">
+      <h2>Question 1</h2>
+      <p>What is the SI unit of force?</p>
+      <div class="question-image">
+        <!-- Optional Image -->
+        <img src="assets/force-image.png" alt="Force Diagram">
+      </div>
+      <form class="options">
+        <label>
+          <input type="radio" name="option" value="A"> (A) Joule
+        </label>
+        <label>
+          <input type="radio" name="option" value="B"> (B) Newton
+        </label>
+        <label>
+          <input type="radio" name="option" value="C"> (C) Pascal
+        </label>
+        <label>
+          <input type="radio" name="option" value="D"> (D) Watt
+        </label>
+      </form>
+      <button class="solution-button">Show Solution</button>
+      <div class="solution-dropdown">
+        <p><strong>Correct Answer:</strong> (B) Newton</p>
+        <p><strong>Explanation:</strong> Force is measured in Newtons (N).</p>
+      </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Questions</h3>
+      <div class="question-numbers">
+        <span class="correct">1</span>
+        <span class="incorrect">2</span>
+        <span class="visited">3</span>
+        <span class="not-visited">4</span>
+        <!-- Add more question numbers as needed -->
+      </div>
+      <div class="navigation-buttons">
+        <button class="prev-button"><i class="fas fa-arrow-left"></i> Previous</button>
+        <button class="next-button">Next <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <button class="submit-button">Submit</button>
+    <button class="save-next-button">Save & Next</button>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
